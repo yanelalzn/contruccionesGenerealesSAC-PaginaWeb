@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+:root{
+    --primary-color: #005795;
+    --primary-darkblue: #1735DD;
+    --color-lightblue: #89D9F2;
+    --color-lightgrey: #DEE0E7;
+    --color-darkgrey: #4A4B4F;
+
+    --max-width: 1440px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* proyecto */
+
+section{
+    height: auto;
+}
+
+.title-service h1{
+    color: var(--primary-color);;
+    font-family: "Source Sans Pro", Sans-serif;
+    font-size: 41px;
+    font-weight: 200;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+    margin: 4rem;
+}
+
+
+.service-photo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+article{
+    width: 24%;
+}
+
+figure {
+    margin: 0;
+}
+
+.service_photo {
+    position: relative;
+}
+
+
+figure .service-image {
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    filter: brightness(35%);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.6);
+}
+
+.opacity{
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    transition: background 1s, border-radius 0.3s, opacity 1s;
+    cursor: pointer;
+}
+
+.opacity:hover{
+    background-color: #00579581;
+}
+
+.absoluta{
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    top: 35%;
+    left: 22%;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.service-icono{
+    position: absolute;
+    top: 33%;
+    left: 43%;
+    width: 15%;
+    height: 14%;
+    color: white;
+}
+
+/* Clientes */
+
+.clientes-logos{
+    margin-top: 5rem;
+}
+.cliente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.scroll img{
+    width: 150px;
+    height: 100px;
+    margin: 0 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.scroll img:not(:hover){
+    filter: grayscale(100%);
+}
+
+.scroll{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    overflow: hidden;
+    padding: 2rem;
+    margin: 0rem 0 4rem 0;
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.scroll .este{
+    white-space: nowrap;
+    animation: animate 30s linear infinite;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.scroll:hover .este{
+    animation-play-state: paused;
+}
+
+.title-clientes{
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Source Sans Pro", Sans-serif;
+    font-size: 41px;
+    font-weight: 200;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
