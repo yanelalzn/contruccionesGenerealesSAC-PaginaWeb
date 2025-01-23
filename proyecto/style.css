@@ -158,3 +158,32 @@ figure .service-image {
     font-weight: 200;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
 }
+
+
+@media(max-width:991px){
+    article{
+        width: 80%;
+    }
+    figure .service-image{
+        height: 50vh;
+    }
+    .opacity{
+        height: 50vh;
+    }
+    .absoluta{
+        top: 40%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+    article{
+        width: 40%;
+    }
+    figure .service-image, .opacity{
+        height: 40vh;
+    }
+    .absoluta{
+        font-size: 22px;
+        top: 36%;
+    }
+}

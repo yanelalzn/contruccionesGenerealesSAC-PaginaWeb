@@ -46,6 +46,18 @@ header a{
 .list-right{
     gap: 4rem;
 }
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+header label{
+    cursor: pointer;
+    display: none;
+}
 
 .list-right .list-links{
     list-style: none;
@@ -477,4 +489,162 @@ footer{
     border-radius: 100%;
     padding: 10px;
     background-color: #25d366;
+}
+
+
+
+@media(max-width:991px){
+
+    /* Header */
+    .list-right{
+        padding: 30px;
+        margin: 0;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+    header label{
+        display: initial;
+        padding-right: 2rem;
+    }
+
+    .list-right{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    
+    .list-right .list-links{
+        display: inline;
+        text-align: center;
+    }
+    
+    .list-redes{
+        justify-content: center;
+        padding:0;
+    }
+
+    #menu:checked ~ .list-right{
+        display: initial;
+    }
+    .line:after{
+        display: none;
+    }
+
+    /* banner */
+    nav{
+        height: 50vh;
+    }
+    .header-container{
+        padding: 0 1rem;
+        align-items: center;
+    }
+    .header-container h1{
+        font-size: 32px;
+    }
+    nav .section-container{
+        justify-content: center;
+    }
+
+    /* nosotros */
+
+    .nosotros .title-nosotros{
+        display: none;
+    }
+    .nosotros-img-biograp{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .nosotros .biograp, .nosotros .image-nosotros{
+        width: 80%;
+    }
+    .biograp h1{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    /* vision y mision */
+
+    .title-vm-nosotros{
+        margin: 0 0 0 2rem;
+    }
+    .inf-mv{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mision, .vision{
+        width: 80%;
+    }
+
+     /* proyecto */
+
+     .title-proyectos h1{
+        font-size: 35px;
+    }
+    .first-line-image{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .image-proyecto{
+        width: 80%;
+    }
+    .second-line-image{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .image-proyecto-second{
+        width: 80%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+
+      /* footer */
+      footer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .empresa-footer{
+        align-items: center;
+        flex-direction: initial;
+    }
+    .widthfooter{
+        width: 90%;
+    }
+    .icon-inf{
+        flex-direction: column;
+    }
+    .widthfooterce{
+        width: 90%;
+    }
+    .map-footer{
+        display: inline;
+    }
+    .icon-inf{
+        gap: 0;
+    }
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+    nav{
+        height: 50vh;
+    }
+    .first-line-image, .second-line-image{
+        height: 25vh;
+    }
+
+    footer{
+        justify-content: space-around;
+    }
+    .empresa-footer{
+        align-items: end;
+    }
 }

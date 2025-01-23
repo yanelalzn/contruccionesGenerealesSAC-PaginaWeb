@@ -976,7 +976,8 @@ footer{
     /* Servicio */
 
     figure .service-image{
-        height: 30vh;
+        height: 100%;
+        object-fit: cover;
     }
 
     .opacity {
@@ -986,10 +987,11 @@ footer{
     .service-icono{
         width: 8%;
         height: 20%;
+        left: 47%;
     }
     .absoluta{
         top: 44%;
-        left: 13%;
+        left: 15%;
         font-size: larger;
     }
     article{
@@ -1005,6 +1007,13 @@ footer{
     }
     .title-service h1{
         font-size: 35px;
+    }
+
+
+    /* nosotros */
+
+    .nosotros{
+        margin-top: 4rem;
     }
     .nosotros .title-nosotros{
         display: none;
@@ -1041,7 +1050,7 @@ footer{
     }
     .image-proyecto-second{
         width: 80%;
-        height: 50vh;
+        height: 40vh;
         object-fit: cover;
     }
 
@@ -1148,6 +1157,9 @@ footer{
     }
     .map-footer{
         display: none;
+    }
+    .second-line-image img{
+        object-fit: cover;
     }
 
 }
