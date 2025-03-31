@@ -34,10 +34,15 @@ header a{
     color: #eee;
 }
 
-.nav-logo img{
-    width: 250px;
-    height: 85px;
+.nav-logo, .list-right {
+    width: 40%;
+}
+
+.nav-logo img {
+    width: 225px;
+    height: 65px;
     cursor: pointer;
+    padding: 0 0 0 3rem;
 }
 
 .flex{
@@ -497,7 +502,7 @@ footer{
 
     /* Header */
     .list-right{
-        padding: 30px;
+        padding: 30px 0;
         margin: 0;
     }
 
@@ -510,6 +515,7 @@ footer{
     }
 
     .list-right{
+        width: 100%;
         position: absolute;
         top: 70%;
         left: 0;
@@ -569,7 +575,13 @@ footer{
 
     /* vision y mision */
 
+    .title-vm-nosotros img{
+        width: 100px;
+        height: 55px;
+    }
+
     .title-vm-nosotros{
+        align-items: center;
         margin: 0 0 0 2rem;
     }
     .inf-mv{
@@ -586,6 +598,11 @@ footer{
      .title-proyectos h1{
         font-size: 35px;
     }
+
+    .title-proyectos p{
+        padding: 0 5px;
+    }
+    
     .first-line-image{
         flex-direction: column;
         align-items: center;

@@ -34,10 +34,15 @@ header a{
     color: #eee;
 }
 
+.nav-logo, .list-right{
+    width: 40%;
+}
+
 .nav-logo img{
-    width: 250px;
-    height: 85px;
+    width: 225px;
+    height: 65px;
     cursor: pointer;
+    padding: 0 0 0 3rem;
 }
 
 .flex{
@@ -541,7 +546,7 @@ figure .service-image {
 
 .image-nosotros img{
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 
 
@@ -778,6 +783,7 @@ input{
     border: 2px solid var(--primary-color); 
     padding-left: 10px;
     padding-top: 15px; 
+    font-family: Poppins;
   }
   
    
@@ -827,6 +833,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 30vh;
     background-color: #07236C;
     padding:  2rem 0 3rem 0;
 }
@@ -852,6 +859,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 10px;
 }
 
 .map-footer{
@@ -927,7 +935,7 @@ footer{
 
     /* Header */
     .list-right{
-        padding: 30px;
+        padding: 30px 0;
         margin: 0;
     }
 
@@ -940,6 +948,7 @@ footer{
     }
 
     .list-right{
+        width: 100%;
         position: absolute;
         top: 70%;
         left: 0;
@@ -1035,6 +1044,15 @@ footer{
     .title-proyectos h1{
         font-size: 35px;
     }
+
+    .title-proyectos p{
+        padding: 0 5px;
+    }
+
+    .content-proyecto p{
+        font-size: 22px;
+    }
+
     .first-line-image{
         flex-direction: column;
         align-items: center;
@@ -1062,7 +1080,7 @@ footer{
     /* formulario contacto */
 
     .title-form{
-        line-height: 1rem;
+        line-height: 30px;
     }
     input{
         width: 80%;
@@ -1077,12 +1095,13 @@ footer{
         font-size: x-large;
     }
     .img-fondo-form img{
-        height: 700px;
+        height: 800px;
     }
     /* footer */
     footer{
         flex-direction: column;
         gap: 1rem;
+        height: auto;
     }
     .empresa-footer{
         align-items: center;

@@ -149,6 +149,7 @@ hr{
     height: 100px;
     padding: 16px;
     border: 2px solid var(--primary-color);
+    font-family: Poppins;
 }
 
 .form-contacto input:focus, .form-contacto textarea:focus{
