@@ -479,8 +479,9 @@ figure .service-image {
     position: absolute;
     text-align: center;
     width: 70%;
-    top: 40%;
-    left: 16%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: x-large;
     font-weight: 800;
     color: white;
@@ -489,8 +490,9 @@ figure .service-image {
 
 .service-icono{
     position: absolute;
-    top: 28%;
-    left: 43%;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 15%;
     height: 14%;
     color: white;
@@ -994,14 +996,17 @@ footer{
         height: 30vh;
     }
     .service-icono{
-        width: 8%;
-        height: 20%;
-        left: 47%;
+        width: 15%;
+        height: 18%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .absoluta{
-        top: 44%;
-        left: 15%;
-        font-size: larger;
+        font-size: 13px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     article{
         width: 80%;
@@ -1145,9 +1150,16 @@ footer{
     .service-icono{
         width: 12%;
         height: 13%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .absoluta{
         font-size: large;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
     }
     section{
         height: auto;
@@ -1181,4 +1193,30 @@ footer{
         object-fit: cover;
     }
 
+    /* Nosotros */
+
+    .nosotros-img-biograp{
+        align-items: center;
+    }
+
+    .biograp h1{
+        font-size: 23px;
+    }
+
+    /* footer */
+    
+    footer{
+        height: 25vh;
+    }
+
+    .widthfooter{
+        width: 30%;
+    }
+    .widthfooterce{
+        width: 60%;
+    }
+
+    .empresa-footer img, .empresa-footer p{
+        padding: 0 15px;
+    }
 }

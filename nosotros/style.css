@@ -661,7 +661,31 @@ footer{
     footer{
         justify-content: space-around;
     }
-    .empresa-footer{
-        align-items: end;
+
+    /* Nosotros */
+
+    .nosotros-img-biograp{
+        align-items: center;
+    }
+
+    /* footer */
+    
+    footer{
+        height: 25vh;
+    }
+
+    .widthfooter{
+        width: 30%;
+    }
+    .widthfooterce{
+        width: 60%;
+    }
+
+    .empresa-footer img, .empresa-footer p{
+        padding: 0 30px;
+    }
+
+    .map-footer {
+        display: none;
     }
 }

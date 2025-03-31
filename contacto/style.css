@@ -210,4 +210,8 @@ hr{
     .icon-contacto, .formulario-contacto{
         width: 45%;
     }
+
+    .map-contacto iframe{
+        height: 30vh !important;
+    }
 }
